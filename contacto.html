@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Genius Akyda</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root { 
+            --forest-green: #0a2615;
+            --forest-light: #123d24;
+            --brand-orange: #ff7300;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--forest-green); 
+            color: #e5e7eb; 
+        }
+        h1, h2, h3, h4, .font-montserrat { 
+            font-family: 'Montserrat', sans-serif; 
+        }
+        .text-orange-brand { color: var(--brand-orange); }
+        .bg-orange-brand { background-color: var(--brand-orange); }
+        .bg-forest-light { background-color: var(--forest-light); }
+        
+        .dot-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="dot-pattern overflow-x-hidden antialiased selection:bg-[#ff7300] selection:text-white relative">
+
+    <nav class="fixed top-0 w-full z-[100] bg-[#0a2615]/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="assets/LOGO.png" alt="Genius Akyda Logo" class="h-12 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300">
+                <span class="font-montserrat font-bold text-white text-xl tracking-wide group-hover:text-[#ff7300] transition-colors duration-300">Genius Akyda</span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="index.html" class="text-sm font-semibold text-white/80 hover:text-[#ff7300] transition-colors">Inicio</a>
+                <a href="soluciones.html" class="text-sm font-semibold text-white/80 hover:text-[#ff7300] transition-colors">Soluciones</a>
+                <a href="metodologia.html" class="text-sm font-semibold text-white/80 hover:text-[#ff7300] transition-colors">Metodología</a>
+                <a href="contacto.html" class="px-6 py-2 bg-[#ff7300] text-white rounded-full font-semibold hover:bg-[#e66800] transition-colors text-sm shadow-lg shadow-[#ff7300]/20 border-2 border-[#ff7300]">
+                    Contacto
+                </a>
+            </div>
+            
+            <button id="open-nav" class="md:hidden text-white hover:text-[#ff7300] transition-colors">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="nav-overlay" class="fixed inset-0 bg-[#0a2615] z-[110] translate-x-full transition-transform duration-500 flex flex-col justify-center p-12 dot-pattern">
+        <button id="close-nav" class="absolute top-8 right-6 text-white hover:text-[#ff7300] transition-colors">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <div class="flex flex-col gap-8 text-center">
+            <a href="index.html" class="font-montserrat font-bold text-4xl text-white/80 hover:text-white transition-colors">Inicio</a>
+            <a href="soluciones.html" class="font-montserrat font-bold text-4xl text-white/80 hover:text-white transition-colors">Soluciones</a>
+            <a href="metodologia.html" class="font-montserrat font-bold text-4xl text-white/80 hover:text-white transition-colors">Metodología</a>
+            <a href="contacto.html" class="font-montserrat font-bold text-4xl text-[#ff7300]">Contacto</a>
+        </div>
+    </div>
+
+    <header class="relative pt-40 pb-16 px-6 bg-gradient-to-b from-[#123d24]/50 to-transparent">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="font-montserrat text-4xl md:text-6xl font-bold text-white mb-6">
+                Conectemos <span class="text-orange-brand">Directamente</span>
+            </h1>
+            <p class="text-lg md:text-xl text-white/70 font-light leading-relaxed">
+                Sin formularios eternos ni respuestas automatizadas por robots. Elige el canal que prefieras y habla directamente con nuestro equipo de especialistas.
+            </p>
+        </div>
+    </header>
+
+    <main class="py-12 max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-8">
+        
+        <div class="bg-forest-light/40 border border-white/5 p-8 rounded-2xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-[#ff7300]/30 transition-all group">
+            <div>
+                <div class="w-12 h-12 rounded-xl bg-[#ff7300]/10 flex items-center justify-center text-[#ff7300] mb-6">
+                    <i data-lucide="message-square" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Conversación Inmediata</h3>
+                <p class="text-sm text-white/60 leading-relaxed mb-6">
+                    ¿Prefieres la agilidad de un chat? Nuestro equipo comercial está disponible para resolver dudas rápidas, agendar videollamadas o recibir briefs breves por mensajería.
+                </p>
+            </div>
+            <a href="https://wa.me/#" target="_blank" class="w-full py-4 bg-white/5 rounded-xl text-white font-semibold text-center block hover:bg-[#ff7300] hover:text-white transition-all flex items-center justify-center gap-2">
+                Chatear por WhatsApp <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="bg-forest-light/40 border border-white/5 p-8 rounded-2xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-[#ff7300]/30 transition-all group">
+            <div>
+                <div class="w-12 h-12 rounded-xl bg-[#ff7300]/10 flex items-center justify-center text-[#ff7300] mb-6">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Propuestas y Briefs</h3>
+                <p class="text-sm text-white/60 leading-relaxed mb-6">
+                    Para proyectos más robustos, solicitudes de cotización formales o licitaciones (RFPs), escríbenos directamente por correo electrónico. Respondemos en menos de 24 horas hábiles.
+                </p>
+            </div>
+            <a href="mailto:hola@geniusakyda.com" class="w-full py-4 bg-white/5 rounded-xl text-white font-semibold text-center block hover:bg-[#ff7300] hover:text-white transition-all flex items-center justify-center gap-2">
+                hola@geniusakyda.com <i data-lucide="mail-open" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="bg-forest-light/40 border border-white/5 p-8 rounded-2xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-[#ff7300]/30 transition-all group">
+            <div>
+                <div class="w-12 h-12 rounded-xl bg-[#ff7300]/10 flex items-center justify-center text-[#ff7300] mb-6">
+                    <i data-lucide="clock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Horario de Operación</h3>
+                <p class="text-sm text-white/60 leading-relaxed mb-4">
+                    Nuestra Sede Creativa opera bajo metodologías que respetan los tiempos de entrega de manera estricta.
+                </p>
+                <ul class="text-xs text-white/70 space-y-2 border-t border-white/10 pt-4">
+                    <li class="flex justify-between"><span>Lunes a Viernes:</span> <strong class="text-white">9:00 AM — 6:00 PM</strong></li>
+                    <li class="flex justify-between"><span>Sábados y Domingos:</span> <span class="text-white/40">Cerrado (Guardia BTL)</span></li>
+                </ul>
+            </div>
+            <a href="tel:#" class="w-full py-4 bg-white/5 rounded-xl text-white font-semibold text-center block hover:bg-[#ff7300] hover:text-white transition-all flex items-center justify-center gap-2">
+                Llamar a Oficina <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <section class="py-16 max-w-7xl mx-auto px-6">
+        <div class="bg-forest-light border border-white/5 rounded-3xl overflow-hidden grid lg:grid-cols-2 shadow-2xl items-center">
+            
+            <div class="p-8 md:p-16">
+                <span class="text-xs uppercase tracking-widest text-[#ff7300] font-bold block mb-3">Nuestra Base</span>
+                <h2 class="font-montserrat text-3xl font-bold text-white mb-6">Sede Corporativa</h2>
+                <p class="text-white/70 leading-relaxed mb-8 text-sm md:text-base">
+                    Ubicados en una de las zonas comerciales y operativas más estratégicas de Saltillo, Coahuila. Atendemos juntas presenciales previa cita y coordinamos operaciones BTL y digitales a nivel regional.
+                </p>
+                
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-10 h-10 rounded-full bg-[#0a2615] border border-white/10 flex items-center justify-center text-[#ff7300] shrink-0">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white text-sm block mb-1">Dirección Postal</strong>
+                        <p class="text-xs md:text-sm text-white/60 leading-relaxed">
+                            Jose Sarmiento #1515 Int. 302-A<br>
+                            Rancho de Peña, Saltillo, Coahuila<br>
+                            C.P. 25210
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative h-64 lg:h-full min-h-[350px] bg-[#06180d] flex items-center justify-center overflow-hidden border-t lg:border-t-0 lg:border-l border-white/5">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Ubicación Estructura" class="absolute inset-0 w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0a2615] via-transparent to-transparent"></div>
+                <div class="relative z-10 text-center animate-bounce">
+                    <div class="w-16 h-16 rounded-full bg-[#ff7300] shadow-2xl shadow-[#ff7300]/50 flex items-center justify-center text-white mx-auto border-4 border-[#0a2615]">
+                        <i data-lucide="map-pin" class="w-8 h-8"></i>
+                    </div>
+                    <span class="block mt-4 font-montserrat font-bold text-white text-sm tracking-wide">Genius Akyda HQ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 border-t border-white/5 bg-[#123d24]/20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-white mb-4">Preguntas Frecuentes</h2>
+                <p class="text-white/60 text-sm">Todo lo que necesitas saber antes de iniciar un proyecto con nosotros.</p>
+            </div>
+            
+            <div class="space-y-6">
+                
+                <div class="p-6 bg-[#0a2615]/80 border border-white/5 rounded-xl">
+                    <h4 class="text-white font-semibold text-base md:text-lg mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-[#ff7300] shrink-0"></i>
+                        ¿Trabajan únicamente en Saltillo o tienen cobertura nacional?
+                    </h4>
+                    <p class="text-xs md:text-sm text-white/60 leading-relaxed pl-8">
+                        Para soluciones digitales (Branding, Publicidad en Redes, Google Ads, Sitios Web), nuestra cobertura es completamente nacional e internacional. Para activaciones físicas (BTL) y producción de eventos, operamos principalmente en la región noreste, evaluando proyectos especiales en otros estados de la república.
+                    </p>
+                </div>
+
+                <div class="p-6 bg-[#0a2615]/80 border border-white/5 rounded-xl">
+                    <h4 class="text-white font-semibold text-base md:text-lg mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-[#ff7300] shrink-0"></i>
+                        ¿Cuánto tiempo tardan en entregar una cotización formal?
+                    </h4>
+                    <p class="text-xs md:text-sm text-white/60 leading-relaxed pl-8">
+                        Una vez que realizamos la sesión de briefing directo (llamada o videollamada corta), nos toma un promedio de 48 a 72 horas hábiles estructurar una propuesta económica formal detallada, dependiendo de la complejidad técnica de la solución.
+                    </p>
+                </div>
+
+                <div class="p-6 bg-[#0a2615]/80 border border-white/5 rounded-xl">
+                    <h4 class="text-white font-semibold text-base md:text-lg mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-[#ff7300] shrink-0"></i>
+                        ¿Cuentan con paquetes fijos o cotizan a la medida?
+                    </h4>
+                    <p class="text-xs md:text-sm text-white/60 leading-relaxed pl-8">
+                        Aunque tenemos bases de inversión estándar para servicios específicos como Branding o Administración de Redes, preferimos cotizar a la medida tras evaluar los objetivos comerciales de tu empresa. Creemos que las soluciones estandarizadas no siempre resuelven problemas particulares.
+                    </p>
+                </div>
+
+                <div class="p-6 bg-[#0a2615]/80 border border-white/5 rounded-xl">
+                    <h4 class="text-white font-semibold text-base md:text-lg mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-[#ff7300] shrink-0"></i>
+                        ¿Cómo garantizan el cumplimiento de los entregables?
+                    </h4>
+                    <p class="text-xs md:text-sm text-white/60 leading-relaxed pl-8">
+                        Todo proyecto se formaliza mediante un contrato de prestación de servicios comerciales que incluye un calendario de trabajo estricto (Gantt) y cláusulas de confidencialidad. Además, tal como indica nuestra metodología, se te asigna un canal de comunicación directo para ver avances en tiempo real.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#06180d] pt-20 pb-10 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 mb-16">
+            
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <img src="assets/LOGO.png" alt="Genius Akyda Logo" class="h-10 w-auto object-contain">
+                    <span class="font-montserrat font-bold text-white text-2xl">Genius Akyda</span>
+                </div>
+                <p class="text-white/60 max-w-sm mb-8 text-sm">
+                    Estrategias integrales de publicidad y mercadotecnia que fortalecen el posicionamiento de marcas en diversos mercados.
+                </p>
+                
+            </div>
+
+            <div class="md:text-right flex flex-col md:items-end justify-center">
+                <h4 class="text-white font-bold mb-6 font-montserrat text-xl">Sede Creativa</h4>
+                
+                <div class="flex items-start md:items-center gap-4 text-right justify-end mb-4">
+                    <div class="text-left md:text-right">
+                        <p class="text-white/60 text-sm leading-relaxed">
+                            Jose Sarmiento #1515 Int. 302-A<br>
+                            Rancho de Peña<br>
+                            Saltillo, Coahuila C.P. 25210
+                        </p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-[#123d24] flex items-center justify-center shrink-0 border border-white/10 hidden md:flex">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#ff7300]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex gap-6">
+                <a href="index.html" class="text-white/40 hover:text-white text-xs transition-colors">Inicio</a>
+                <a href="soluciones.html" class="text-white/40 hover:text-white text-xs transition-colors">Soluciones</a>
+                <a href="metodologia.html" class="text-white/40 hover:text-white text-xs transition-colors">Metodología</a>
+                <a href="contacto.html" class="text-[#ff7300] font-semibold text-xs transition-colors">Contacto</a>
+            </div>
+            <p class="text-white/40 text-xs text-center md:text-right">
+                © 2026 Genius Akyda. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Control del menú móvil
+        const openNav = document.getElementById('open-nav');
+        const closeNav = document.getElementById('close-nav');
+        const navOverlay = document.getElementById('nav-overlay');
+
+        if(openNav && closeNav && navOverlay) {
+            openNav.onclick = () => {
+                navOverlay.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            };
+            closeNav.onclick = () => {
+                navOverlay.classList.add('translate-x-full');
+                document.body.style.overflow = 'auto';
+            };
+        }
+    </script>
+</body>
+</html>
